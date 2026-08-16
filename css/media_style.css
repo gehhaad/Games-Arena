@@ -1,0 +1,181 @@
+
+/*
+Small	        sm	                ≥576px  max-width: 767px
+Medium	        md	                ≥768px  max-width: 991px
+Large	        lg	                ≥992px  max-width: 1199px
+Extra           large(xl)	        ≥1200px max-width: 1399px
+Extra           extra large(xxl)	≥1400px 
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px){ 
+    .brand-title{
+        font-size: 45px;
+    }
+    .brand-descrabtion{
+        font-size: 15px;
+    }
+    .btn-shine{
+        font-size: 15px !important;
+    }
+    .box-over-img{
+        bottom: 110px;
+        right: 410px;
+    }
+    .game-header h2,
+    .team-header h2,
+    .contact-header h2{
+        font-size: 34px;
+    }
+    .game-title p::before,
+    .what-title p::before,
+    .team-header p::before,
+    .contact-header p::before{
+        left: 160px;
+    }
+    .game-title p::after,
+    .what-header p::after,
+    .team-header p::after,
+    .contact-header p::after{
+        right: 160px;
+    }
+    .what-header h2,
+    .what-header .p-des{
+        font-size: 28px;
+    }
+    .con-box::after{
+        bottom: -50;
+        left: 50%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and  (min-width: 768px){ 
+    .brand-title{
+        font-size: 48px;
+    }
+    .brand-descrabtion{
+        font-size: 16px;
+    }
+    .btn-shine{
+        font-size: 16px !important;
+    }
+    .box-over-img{
+        bottom: 150px;
+        right: 550px;
+    }
+    .game-header h2,
+    .what-header h2,
+    .team-header h2,
+    .contact-header h2{
+        font-size: 48px;
+    }
+    .game-title p::before,
+    .what-title p::before,
+    .team-header p::before,
+    .contact-header p::before{
+        left: 240px;
+    }
+    .game-title p::after,
+    .what-header p::after,
+    .team-header p::after,
+    .contact-header p::after{
+        right: 240px;
+    }
+    .what-header h2,
+    .what-header .p-des{
+        font-size: 36px;
+    }
+    .con-box::after{
+        bottom: -50;
+        left: 50%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and  (min-width: 992px){
+    #home-section .container {
+        max-width: 100%;
+    }
+    .brand-title{
+        font-size: 60px;
+    }
+    .brand-descrabtion{
+        font-size: 16px;
+    }
+    .btn-shine{
+        font-size: 16px !important;
+    }
+    .box-over-img{
+        bottom: 120px;
+        right: 450px;
+    }
+    .game-title p::before,
+    .what-title p::before,
+    .team-header p::before,
+    .contact-header p::before{
+        left: 340px;
+    }
+    .game-title p::after,
+    .what-header p::after,
+    .team-header p::after,
+    .contact-header p::after{
+        right: 340px;
+    }
+    .what-header h2,
+    .what-header .p-des{
+        font-size: 48px;
+    }
+    .con-box::after{
+        bottom: -30;
+        left: 50%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media only screen and  (min-width: 1200px){
+    .box-over-img{
+        bottom: 140px;
+        right: 500px;
+    }
+    .game-title p::before,
+    .what-title p::before,
+    .team-header p::before,
+    .contact-header p::before{
+        left: 440px;
+    }
+    .game-title p::after,
+    .what-header p::after,
+    .team-header p::after,
+    .contact-header p::after{
+        right: 440px;
+    }
+    .con-box::after{
+        bottom: -20;
+        left: 50%;
+    }
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media only screen and  (min-width: 1400px){
+    #home-section .container {
+        max-width: 80%;
+    }
+    .box-over-img{
+        bottom: 130px;
+        right: 480px;
+    }
+    .game-title p::before,
+    .what-title p::before,
+    .team-header p::before,
+    .contact-header p::before{
+        left: 520px;
+    }
+    .game-title p::after,
+    .what-header p::after,
+    .team-header p::after,
+    .contact-header p::after{
+        right: 520px;
+    }
+}

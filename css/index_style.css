@@ -1,0 +1,526 @@
+/* 
+Small	        sm	                ≥576px  max-width: 767px
+Medium	        md	                ≥768px  max-width: 991px
+Large	        lg	                ≥992px  max-width: 1199px
+Extra           large(xl)	        ≥1200px max-width: 1399px
+Extra           extra large(xxl)	≥1400px 
+*/
+body,
+.navbar{
+    background-color: #0B0E13;
+}
+
+:root{
+    --main-color: #ffc107;
+    --second-color: #cbfe1c;
+}
+
+.navbar,
+.home-btns,
+.brand-descrabtion,
+p,
+.game-card1,
+.form-group,
+.btn-start,
+.middle-coulmn,
+.footer-bottom,
+.text-area p{
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.nav-link.active {
+    color: var(--main-color) !important;
+    font-weight: bold;
+}
+
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease; 
+}
+
+.btn-shine:hover {
+    animation: shimmer 1.5s infinite; 
+}
+
+.btn-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+}
+
+.btn-shine:hover::before {
+    left: 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.icon-box .iconc{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icon-box .iconc:hover{
+    color: var(--main-color) !important;
+}
+
+#home-section{
+    background-image:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 200px;
+    font-family: "Days One", sans-serif;
+}
+
+.brand-title{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.border-img{
+    background: linear-gradient(to right,yellow,green);
+    border-radius: 18px;
+}
+
+.frist-desc{
+    font-size: 12px;
+}
+
+.box-over-img
+{
+    background-color: #0b0e13;
+    bottom: 130px;
+    right: 480px;
+}
+
+.game-title p::before,
+.what-title p::before,
+.team-header p::before,
+.contact-header p::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 520px;
+    width: 5%;
+    height: 2px;
+    background: linear-gradient(to left,yellow,black);
+}
+
+.game-title p::after,
+.what-header p::after,
+.team-header p::after,
+.contact-header p::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 520px;
+    width: 5%;
+    height: 2px;
+    background: linear-gradient(to right,yellow,black);
+}
+
+.game-header h2,
+.what-header h2,
+.team-header h2,
+.contact-header h2{
+    font-family: "Days One", sans-serif;
+    font-size: 48px;
+}
+.game-card1{
+    aspect-ratio: 4 / 3;
+    cursor: pointer;
+}
+
+.game1-img{
+    transition: all 1s 1s;
+}
+
+.game-card1:hover .game-card1-img{
+    transform: scale(1.08);
+}
+
+.overlay{
+    background: linear-gradient(to top, rgba(255, 255, 51, 0.75), transparent);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.game-card1:hover .overlay{
+    opacity: 1;
+}
+
+.tags{
+    top: -40px;
+    left: 20px;
+    transition: .3s;
+}
+
+.game-card1:hover .tags{
+    top: 20px;
+}
+
+.game1-image-caption{
+    bottom: 20px;
+    left: 20px;
+    transform: translateY(150%);
+    transition: .3s;
+}
+.game-card1:hover .game1-image-caption{
+    transform: translateY(0);
+}
+
+.border-anim{
+    inset: 0;
+    border: 3px solid transparent;
+    transition: .3s;
+}
+.game-card1:hover .border-anim{
+    border-color:var(--main-color);
+}
+
+.custom-bottom-btn {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s ease;
+}
+
+.custom-bottom-btn:hover {
+    border-color:var(--main-color) !important;
+}
+
+.custom-bottom-btn:hover i {
+    color: var(--main-color) !important;
+}
+
+.what-header .p-des{
+    font-size: 48px;
+}
+
+.what-card{
+    font-family: "Days One", sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.what-card .fun{
+    padding-left: 20px;
+    padding-right: 45px;
+    background-color: oklch(0.278 0.033 256.848);
+    transition: all 0.3s ease;
+}
+
+.what-card .mob{
+    padding-left: 25px;
+    padding-right: 40px;
+    background-color: oklch(0.278 0.033 256.848);
+    transition: all 0.3s ease;
+}
+
+.cards:hover .fun,
+.cards:hover .mob{
+    background-color: var(--main-color) !important;
+    color: black !important;
+}
+
+.cards{
+    aspect-ratio: 1;
+    background-color: #1A1A1A;
+}
+
+.card-image{
+    aspect-ratio: 1;
+}
+
+.cards:hover {
+    border-color: var(--main-color) !important;
+}
+
+.corner {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transition: all 0.3s ease;
+}
+
+.corner-top-left {
+    top: -20px;
+    left: -20px;
+    border-width: 25px 25px 0 0;
+    border-color: #4c4c4c transparent transparent transparent;
+}
+
+.corner-bottom-right {
+    bottom: -20px;
+    right: -20px;
+    border-width: 0 0 25px 25px;
+    border-color: transparent transparent #4c4c4c transparent;
+}
+
+.cards:hover .corner-top-left {
+    top: 10px;
+    left: 10px;
+    border-color: var(--main-color) transparent transparent transparent;
+}
+
+.cards:hover .corner-bottom-right {
+    bottom: 10px;
+    right: 10px;
+    border-color: transparent transparent var(--main-color) transparent;
+}
+
+.con-box::after{
+    content: "";
+    background: linear-gradient(90deg, transparent, var(--second-color) 20%, var(--second-color) 80%, transparent);
+    width: 600px;
+    height: 3px;
+    box-shadow: 0 0 10px var(--second-color), 0 0 20px #cbfe1c4d;
+    position: absolute;
+    bottom: -20;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.logo-box {
+    width: 100px; 
+    height: 100px; 
+    margin-right: 25px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: background .3s ease;
+}
+
+.scroll-left .scroll-content {
+    animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% { 
+        transform: translateX(0); 
+    }
+    100% { 
+        transform: translateX(-50%); 
+    }
+}
+
+.scroll-right .scroll-content {
+    animation: scroll-right 12s linear infinite;
+}
+
+@keyframes scroll-right {
+    0% { 
+        transform: translateX(-50%); 
+    }
+    100% { 
+        transform: translateX(0); 
+    }
+}
+
+.fade-left,
+.fade-right {
+    width: 150px;
+    height: 100%;
+    z-index: 10;
+}
+
+.fade-left {
+    left: 0;
+    background: linear-gradient(to right, #0B0E13, transparent);
+}
+
+.fade-right {
+    right: 0;
+    background: linear-gradient(to left, #0B0E13, transparent);
+}
+
+.radial-bg {
+   width: 1200px;
+    height: 350px;
+    --tw-gradient-from: color-mix(in oklab, var(--second-color) 85%, transparent);
+    background: radial-gradient(circle,var(--tw-gradient-from) 0%, transparent 70%); 
+    filter: blur(100px);      
+    z-index: -10;
+}
+
+.team-card {
+    height: 350px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.team-img {
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.text-area h3,
+.text-area p,
+.rotate-text {
+    filter: grayscale(100%) opacity(0.5); 
+    transition: filter 0.6s ease; 
+}
+
+.team-card:hover .text-area h3,
+.team-card:hover .text-area p,
+.team-card:hover .rotate-text {
+    filter: grayscale(0%) opacity(1);
+}
+
+.overlay1 {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: grayscale(100%);
+    transform: translateY(0%);
+    transition: transform 0.6s ease, backdrop-filter 0.6s ease, background 0.6s ease;
+}
+
+.rotate-text {
+    writing-mode: vertical-rl;
+    transform: rotate(360deg);
+}
+
+.team-card:hover .overlay1 {
+    transform: translateY(-100%); 
+    background: rgba(0, 0, 0, 0); 
+    backdrop-filter: sepia(0%); 
+}
+
+.contact-info .loc{
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.contact-info .phone,
+.contact-info .email{
+    padding-left: 20px;
+    padding-right: 45px;
+}
+
+.location-info h3,
+.contact-active-info h3,
+.join-form h3,
+.footer-details h4,
+.text-area h3{
+    font-family: "Days One", sans-serif; 
+}
+
+.contact-info,
+.join-form{
+    background-color: oklch(0.278 0.033 256.848);
+}
+
+.contact-active-info{
+    background: linear-gradient(to right , rgb(238, 238, 56) 10% ,rgb(76, 239, 76));
+}
+ 
+.icons-link .dis{
+    padding: 12px 35px 12px 10px;
+}
+
+.icons-link .twi,
+.icons-link .insta{
+    padding: 12px 32px 12px 13px;
+    color: #d0fa46;
+}
+.icons-link .yout{
+    color: rgb(215, 247, 109);
+    padding: 12px 34px 12px 11px;
+}
+.icons-link{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icons-link .dis:hover,
+.icons-link .twi:hover,
+.icons-link .insta:hover,
+.icons-link .yout:hover{
+  background-color: rgba(33, 37, 41, 0.8) !important; 
+}
+
+.row-form {
+    align-items: flex-start !important;
+}
+
+.form-group .inpt{
+    background-color: oklch(0.373 0.034 259.733);  
+}
+
+.btn-start{
+ background-color:rgb(238, 238, 56);
+}
+
+.bottom1{
+    color:rgb(238, 238, 56);
+}
+
+.inpt:focus {
+    border-color: var(--second-color) !important; 
+    color: #fff !important; 
+    box-shadow: 0 0 8px #cbfe1c55;      
+    outline: none;
+}
+
+.msg{
+    min-height: 140px;
+}
+
+.custom-check {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: 2px solid #6c757d;
+    transition: 0.2s ease;
+}
+
+.custom-check:checked {
+    background-color: #da2222;
+    border-color: var(--second-color); 
+    box-shadow: 0 0 5px var(--second-color);
+}
+
+.custom-check-label {
+    transition: 0.2s ease;
+}
+
+.socials .twi,
+.socials .face,
+.socials .insta,
+.socials .yout,
+.socials .twt{
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.socials .twi:hover,
+.socials .face:hover,
+.socials .insta:hover,
+.socials .yout:hover,
+.socials .twt:hover{
+    color: var(--second-color) !important;
+}
+
+.links-li{
+    list-style: none;
+}
+
+.links-coulmn{
+    transition: color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.links-coulmn:hover{
+    color: var(--second-color) !important;
+}
