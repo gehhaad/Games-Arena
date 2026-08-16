@@ -56,7 +56,7 @@ A section presenting the main services and activities provided by Games Arena.
 ### Our Games
 
 A section showcasing the available games and presenting them in an organized and visually appealing layout.
-![Games](screenshotsGames.png)
+![Games](screenshots/Games.png)
 
 ### Our Team
 
